@@ -3,3 +3,8 @@
 
 # 個人用（CLAUDE.local.md など）
 *.local.md
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
