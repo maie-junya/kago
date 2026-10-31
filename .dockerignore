@@ -1,0 +1,16 @@
+# Git
+.git
+
+# コンテナの中で作り直すもの
+node_modules
+.next
+
+# 秘密情報
+.env*
+
+# アプリに不要なもの
+Dockerfile
+.dockerignore
+*.md
+docs
+terraform
