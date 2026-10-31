@@ -4,6 +4,18 @@
 # 個人用（CLAUDE.local.md など）
 *.local.md
 
+# 依存パッケージ
+/node_modules
+
+# Next.js
+/.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# 秘密情報
+.env*
+*.pem
+
 # Terraform
 .terraform/
 *.tfstate
