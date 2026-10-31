@@ -19,6 +19,23 @@ EC サイト。興味がなくても仕様を想像しやすく、トランザ�
 | CI/CD          | GitHub Actions                                      |
 | テスト         | Vitest（DB を使う統合テスト）、Playwright（E2E）    |
 
+## ローカルで動かす
+
+mise と Docker Desktop を入れておく。
+
+```sh
+mise install # mise.toml の Node と pnpm を入れる
+pnpm install
+pnpm dev     # http://localhost:3000
+```
+
+本番と同じコンテナで確かめるとき：
+
+```sh
+docker build -t kago .
+docker run --rm -p 3000:3000 kago
+```
+
 ## ドキュメント
 
 - [ロードマップ](docs/roadmap.md)
